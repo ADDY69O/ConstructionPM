@@ -7,6 +7,7 @@ const dotenv = require("dotenv");
 //main app
 const app = express();
 app.use(cors());
+app.use(express.json());
 dotenv.config({ path: "./config.env" });
 
 //middlewares
@@ -15,6 +16,7 @@ dotenv.config({ path: "./config.env" });
 require("./DB/conn");
 
 //api
+app.use("/api", require("./Api/api"));
 
 const PORT = process.env.PORT;
 

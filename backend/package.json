@@ -1,0 +1,27 @@
+{
+  "name": "project_management",
+  "version": "1.0.0",
+  "description": "backend for full stack project management application",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADDY69O/ConstructionPM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ADDY69O/ConstructionPM/issues"
+  },
+  "homepage": "https://github.com/ADDY69O/ConstructionPM#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0",
+    "nodemon": "^3.1.0"
+  }
+}

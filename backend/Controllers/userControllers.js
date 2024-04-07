@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const Login = async (req, res) => {
   try {
     const { email, password } = req.body;
+
     if (!email || !password) {
       return res.status(400).json({
         message: "Please provide all the credentials",
